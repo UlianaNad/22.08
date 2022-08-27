@@ -3,13 +3,13 @@ const path = require('path');
 
 const server = express();
 
-const session = require('express-session');
 
-const multer = require('multer');
+
+
 
 const mainRouter = require('./routes/main');
 const videoRouter = require('./routes/video');
-const { appendFile } = require('fs');
+
 
 server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, 'views'));
